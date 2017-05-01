@@ -29,11 +29,6 @@
           <li>
             <%= link_to 'Committee Members', "/committee-members" %>
           </li>
-          <% unless signed_in? %>
-            <li>
-              <%= link_to 'Join Ruby Australia', sign_up_path %>
-            </li>
-          <% end %>
           <li>
             <%= link_to 'Meeting Minutes', "/association" %>
           </li>
@@ -42,9 +37,6 @@
           </li>
           <li>
             <%= link_to 'Sponsorship', "/sponsorship" %>
-          </li>
-          <li>
-            <%= link_to 'Docs & Guides', "http://docs.ruby.org.au" %>
           </li>
         </ul>
 
@@ -74,34 +66,25 @@
             <li>
               <%= link_to t('layouts.application.sign_in'), sign_in_path %>
             </li>
+            <li>
+              <%= link_to 'Join Ruby Australia', sign_up_path %>
+            </li>
           <% end %>
         </ul>
 
         <h3>Community</h3>
         <ul>
           <li>
-            <%= link_to 'Articles', "/articles" %>
+            <%= link_to 'Forum (Ruby Down Under)', "https://forum.ruby.org.au", target: :blank %>
           </li>
           <li>
-            <%= link_to 'Mailing list', "https://groups.google.com/forum/#!forum/rails-oceania" %>
+            <%= link_to 'Chat (Slack)', "https://ruby-au-join.herokuapp.com/", target: :blank %>
           </li>
           <li>
-            <%= link_to 'Forum (Ruby Down Under)', "https://forum.ruby.org.au" %>
+            <%= link_to 'Videos', "https://www.youtube.com/channel/UCr38SHAvOKMDyX3-8lhvJHA", target: :blank %>
           </li>
           <li>
-            <%= link_to 'Slack', "https://ruby-au-join.herokuapp.com/" %>
-          </li>
-          <li>
-            <%= link_to 'IRC (#roro)', "http://kiwiirc.com/client/irc.freenode.net/roro" %>
-          </li>
-          <li>
-            <%= link_to 'Videos', "https://vimeo.com/rubyau/channels" %>
-          </li>
-          <li>
-            <%= link_to 'Mentoring', "https://github.com/rails-oceania/roro/wiki/Mentoring" %>
-          </li>
-          <li>
-            <%= link_to 'Wiki', "https://github.com/rails-oceania/roro/wiki" %>
+            <%= link_to 'Mailing list', "https://groups.google.com/forum/#!forum/rails-oceania", target: :blank %>
           </li>
         </ul>
 
