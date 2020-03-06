@@ -23,3 +23,7 @@
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore dev files
+**/.DS_Store
+.idea
